@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { Sanitizer } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
 import { SharedService } from '../shared.service';
 @Component({
   selector: 'app-default',

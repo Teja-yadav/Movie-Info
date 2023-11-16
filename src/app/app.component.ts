@@ -1,7 +1,4 @@
-import { Component ,NgZone} from '@angular/core';
-import { SharedService } from './shared.service';
-
-import { DomSanitizer } from '@angular/platform-browser';
+import { Component} from '@angular/core';
 
 
 @Component({
@@ -10,13 +7,6 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
-
-  movies:any[]=[];
-  constructor(private movieService:SharedService,private zone:NgZone,private sanitizer:DomSanitizer){
-    this.movies=this.movieService.movies;
-  }
- 
   
 }
 
